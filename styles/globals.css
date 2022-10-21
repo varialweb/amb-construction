@@ -1,26 +1,65 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+@layer base {
   body {
-    color: white;
-    background: black;
+    @apply font-['Poppins',_sans-serif] text-base text-[#595959]  md:text-xl bg-[#FAFCFE];
+  }
+  p {
+    @apply leading-7 md:leading-[34px] lg:max-w-[65ch];
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-['Lora',_serif] font-medium tracking-[0.03em];
+  }
+  h1 {
+    @apply text-4xl md:text-[40px] leading-[46px] md:leading-[51px];
+  }
+  h2 {
+    @apply text-[32px] md:text-[36px] leading-[41px] md:leading-[46px];
+  }
+  h3 {
+    @apply text-[28px] md:text-[32px] leading-[36px] md:leading-[41px];
+  }
+  h4 {
+    @apply text-[24px] md:text-[28px] leading-[31px] md:leading-[36px];
+  }
+  h5 {
+    @apply text-[20px] md:text-[24px] leading-[26px] md:leading-[31px];
+  }
+  h6 {
+    @apply text-[16px] md:text-[20px] leading-[20px] md:leading-[26px];
+  }
+  input, select, textarea {
+    @apply border border-[#BBBBBB] rounded text-base lg:text-xl p-[0.5em] w-full;
+  }
+
+  img {
+    @apply w-full max-w-[100vw];
+  }
+}
+
+@layer utilities {
+  .display {
+    @apply text-[54px] md:text-6xl leading-[69px] md:leading-[77px];
+  }
+  .h1 {
+    @apply text-4xl md:text-[40px] leading-[46px] md:leading-[51px];
+  }
+  .h2 {
+    @apply text-[32px] md:text-[36px] leading-[41px] md:leading-[46px];
+  }
+  .h3 {
+    @apply text-[28px] md:text-[32px] leading-[36px] md:leading-[41px];
+  }
+  .h4 {
+    @apply text-[24px] md:text-[28px] leading-[31px] md:leading-[36px];
+  }
+  .h5 {
+    @apply text-[20px] md:text-[24px] leading-[26px] md:leading-[31px];
+  }
+  .h6 {
+    @apply text-[16px] md:text-[20px] leading-[20px] md:leading-[26px];
   }
 }
