@@ -40,6 +40,10 @@
   }
 }
 
+@layer components {
+  .polaroid { @apply bg-[#fafafa] box-content rounded-sm shadow-[0_4px_6px_rgb(0_0_0_/_0.15),_0_0_4px_rgb(0_0_0_/_0.1)] aspect-square object-cover; }
+}
+
 @layer utilities {
   .display {
     @apply text-[54px] md:text-6xl leading-[69px] md:leading-[77px];

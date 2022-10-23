@@ -50,15 +50,12 @@ export default function StandardNav({ text = "black" }) {
           <Link href="/about">
             <a className="text-lg">About</a>
           </Link>
-          <Link href="/about">
-            <a className="text-lg">About</a>
-          </Link>
           {/* <Link href="/team">
             <a className="text-lg">Team</a>
-          </Link>
+          </Link>*/}
           <Link href="/projects">
             <a className="text-lg">Projects</a>
-          </Link> */}
+          </Link> 
           <Link href="/contact">
             <a className="text-lg">Contact</a>
           </Link>
@@ -74,10 +71,10 @@ export default function StandardNav({ text = "black" }) {
           </Link>
           {/* <Link href="/team">
             <a className="text-[28px]">Team</a>
-          </Link>
+          </Link>*/}
           <Link href="/projects">
             <a className="text-[28px]">Projects</a>
-          </Link> */}
+          </Link> 
           <Link href="/contact">
             <a className="text-[28px]">Contact</a>
           </Link>

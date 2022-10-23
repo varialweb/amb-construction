@@ -5,7 +5,7 @@ export default function AboutPage() {
     <StandardPageLayout>
       <section className="px-5 py-8 lg:py-24 grid gap-5 lg:flex lg:justify-center lg:max-w-[78vw] lg:mx-auto lg:gap-[150px] max-w-screen">
         <picture>
-          <img src="/img/harrilyn-new.png" className="max-w-[534px] lg:justify-self-center" />
+          <img src="/img/harrilyn-new.png" className="max-w-[534px] lg:justify-self-center w-full" />
         </picture>
         <div className="grid gap-5 lg:flex lg:flex-col items-start lg:gap-[34px]">
           <h1 className="text-[#BA0500] text-center lg:text-[60px] lg:leading-[77px]">Meet Harrilyn</h1>
@@ -43,6 +43,13 @@ export default function AboutPage() {
           <p>
             By working alongside AMB, you can contribute to a push for equity in a primarily male-dominated industry. Diverse groups can experience an uptick in profitability and personal growth by inviting them into this lucrative sector, which benefits our communities as a whole. Harrilyn is eager to utilize her skills, knowledge, and expertise to inspire more diverse women to join AMB and the construction industry so they too can reap the rising rewards.
           </p>
+        </div>
+      </section>
+      <section className="bg-gradient-to-r from-[#5A9CD7] to-[#5A9CD7] px-5 py-8 lg:py-24 grid gap-5 lg:gap-12 justify-center text-white">
+        <h2>Our Certifications</h2>
+        <div className="bg-white w-full max-w-[800px] rounded-sm shadow-md p-5 flex flex-col lg:flex-row items-center gap-8 lg:p-12">
+          <img src="/img/agc.jpeg" width="150" height="150" alt="AGC"  />
+          <img src="/img/osha30.jpg" width="150" alt="osha" className="w-auto h-[150px]" />
         </div>
       </section>
     </StandardPageLayout>
