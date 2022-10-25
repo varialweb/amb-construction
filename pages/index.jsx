@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import StandardPageLayout from "../components/layouts/standard-page";
@@ -39,6 +40,10 @@ export default function HomePage() {
 
   return (
     <StandardPageLayout text="white">
+      <Head>
+        <title>Bring Your Blueprint to Life</title>
+        <meta name="description" content="The blueprint is the first piece that really makes your dream of a custom home, new commercial space, or residential development feel real. From there, things can easily feel overwhelming and become complicated as you navigate permitting, regulations, securing materials, and acquiring qualified labor. Rather than going it alone, AMB General Contractor serves as your one-stop developer for commercial and residential construction and provides full project support every step of the way. With extensive industry experience and a commitment to excellence, AMB is the perfect solution to successfully build your blueprints right before your eyes." />
+      </Head>
       <section className="text-white">
         <picture>
           <source srcSet="/img/home-hero-background.png" media="(min-width: 1024px)" />

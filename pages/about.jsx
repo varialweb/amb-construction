@@ -1,12 +1,19 @@
+import Head from "next/head";
 import StandardPageLayout from "../components/layouts/standard-page";
 
 export default function AboutPage() {
   return (
     <StandardPageLayout>
+      <Head>
+        <title>About AMB</title>
+        <meta name="description" content="Harrilyn Smith is originally from Mekoryuk, Alaska and has indigenous roots with the Cup'ig of Nunivak Island. She left at the age of 19 and traveled before attending Alaska Technical Center in Kotzebue at the age of 23, and returned home after graduating to begin looking for jobs. She obtained her first apprenticeship with Calista Construction, which was where her career in commercial and residential development first began. After years of living in Alaska, Oregon, and North Carolina, she eventually moved to Washington state in 2017. Harrilyn decided to further her education and attended Northwest Indian College at the Nisqually site in Olympia. She earned her Associate's degree and proudly graduated with Honors." /> 
+      </Head>
       <section className="px-5 py-8 lg:py-24 grid gap-5 lg:flex lg:justify-center lg:max-w-[78vw] lg:mx-auto lg:gap-[150px] max-w-screen">
-        <picture>
-          <img src="/img/harrilyn-new.png" className="max-w-[534px] lg:justify-self-center w-full" />
-        </picture>
+        <div>
+          <picture>
+            <img src="/img/harrilyn-trees.jpg" className="max-w-[534px] lg:justify-self-center w-full rounded-sm shadow-inner" />
+          </picture>
+        </div>
         <div className="grid gap-5 lg:flex lg:flex-col items-start lg:gap-[34px]">
           <h1 className="text-[#BA0500] text-center lg:text-[60px] lg:leading-[77px]">Meet Harrilyn</h1>
           <p>
@@ -34,6 +41,7 @@ export default function AboutPage() {
       <section className="px-5 py-8 lg:py-24 grid gap-5 lg:gap-12 justify-center">
         <h2 className="text-center text-[#BA0500]">Working with AMB</h2>
         <div className="grid gap-5 lg:gap-[34px]">
+        <img src="/img/harrilyn-kids.jpg" className="max-w-[400px] mx-auto rounded-sm shadow-inner" />
           <p>
             Throughout her years of working in the construction industry, Harrilyn saw firsthand some of the inequities that exist even today. Racism, sexism, and underrepresentation of diverse workers were the primary problems she witnessed and encountered during her career. Despite these barriers, Harrilyn has seen great personal and financial growth from her own work as a contractor and is determined to welcome more diverse workers and female contractors into the industry so they can share in this success.
           </p>

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState } from "react";
 import StandardPageLayout from "../components/layouts/standard-page";
 
@@ -36,9 +37,13 @@ export default function ContactPage() {
 
   return (
     <StandardPageLayout>
+      <Head>
+        <title>Contact Us</title>
+        <meta name="description" content="AMB General Contractor is your development solution for commercial, residential, and rural projects. Contact us today to get started! " />
+      </Head>
       <main className="grid gap-5 lg:gap-12 justify-center p-5 py-12 lg:py-24 bg-gradient-to-b from-[#0070C4] to-[#5A9CD7] text-white">
         <h1 className="text-center">Contact us</h1>
-        <p>
+        <p className="text-center">
           AMB General Contractor is your development solution for commercial, residential, and rural projects. Contact us today to get started! 
         </p>
         <form onSubmit={handleContactForm} className="bg-white max-w-[920px] mx-auto p-5 lg:px-16 lg:py-8 grid gap-8 rounded shadow-md text-[#595959] w-full">
