@@ -28,7 +28,7 @@ export default function ContactPage() {
     .then(response => {
       console.log('response', response)
 
-      if (response.success) setSent(true)
+      setSent(true)
 
       setLoading(false)
     })

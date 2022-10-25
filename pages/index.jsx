@@ -30,7 +30,7 @@ export default function HomePage() {
     .then(response => {
       console.log('response', response)
 
-      if (response.success) setSent(true)
+      setSent(true)
 
       setLoading(false)
     })
