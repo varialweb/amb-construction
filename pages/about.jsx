@@ -41,7 +41,10 @@ export default function AboutPage() {
       <section className="px-5 py-8 lg:py-24 grid gap-5 lg:gap-12 justify-center">
         <h2 className="text-center text-[#BA0500]">Working with AMB</h2>
         <div className="grid gap-5 lg:gap-[34px]">
-        <img src="/img/harrilyn-kids.jpg" className="max-w-[400px] mx-auto rounded-sm shadow-inner" />
+        <figure className="bg-slate-200 w-fit mx-auto grid gap-1 text-sm text-center rounded-sm">
+          <img src="/img/harrilyn-kids.jpg" className="max-w-[400px] mx-auto shadow-inner" />
+          <figcaption>Megan, April, and Brittany</figcaption>
+        </figure>
           <p>
             Throughout her years of working in the construction industry, Harrilyn saw firsthand some of the inequities that exist even today. Racism, sexism, and underrepresentation of diverse workers were the primary problems she witnessed and encountered during her career. Despite these barriers, Harrilyn has seen great personal and financial growth from her own work as a contractor and is determined to welcome more diverse workers and female contractors into the industry so they can share in this success.
           </p>
@@ -54,8 +57,8 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="bg-gradient-to-r from-[#5A9CD7] to-[#5A9CD7] px-5 py-8 lg:py-24 grid gap-5 lg:gap-12 justify-center text-white">
-        <h2>Our Certifications</h2>
-        <div className="bg-white w-full max-w-[800px] rounded-sm shadow-md p-5 flex flex-col lg:flex-row items-center gap-8 lg:p-12">
+        <h2 className="text-center">Our Certifications</h2>
+        <div className="bg-white w-full max-w-[800px] rounded-sm shadow-md p-5 flex flex-col lg:flex-row items-center gap-8 lg:gap-24 lg:p-12">
           <img src="/img/agc.jpeg" width="150" height="150" alt="AGC"  />
           <img src="/img/osha30.jpg" width="150" alt="osha" className="w-auto h-[150px]" />
         </div>
